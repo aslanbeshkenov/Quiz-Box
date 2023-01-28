@@ -2,8 +2,8 @@
 
 body {
     background: linear-gradient(#17191C, #17191C),
-        url(/img/mainbackground.png) -56px 21px no-repeat,
-        url(/img/mainbackground2.png) -53px 1780px no-repeat;
+        url(img/mainbackground.png) -56px 21px no-repeat,
+        url(img/mainbackground2.png) -53px 1780px no-repeat;
     font-family: 'Open Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -151,7 +151,6 @@ li {
 
 .news__title-box {
     position: relative;
-    margin: 0 0 -6px 0;
 }
 
 .news__title {
@@ -180,21 +179,20 @@ li {
 }
 
 .card-item__cover-wrap {
-    height: 150px;
+    height: 144px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 5px 5px 0 0;
 }
 
-.cover-wrap-two {
+.card-item__cover-wrap--pos--second {
     padding: 14px 22px 0;
     background: #010101;
 }
 
-.cover-wrap-three {
+.card-item__cover-wrap--pos--third {
     padding: 7px 20px 0;
     background: #150A18;
-
 }
 
 .card-item__img {
@@ -202,16 +200,12 @@ li {
     left: 0px;
 }
 
-
-
 .card-item__block {
     width: 362px;
     padding: 31px 0 0 20px;
     background-color: #FFFFFF;
     border-radius: 0 0 5px 5px;
 }
-
-
 
 .card-item__title {
     font-size: 24px;
@@ -260,16 +254,20 @@ li {
 }
 
 .past-games {
-    margin: 0 0 140px 0;
-}
-
-.past-games__list {
-    margin: 0 0 57px 0;
+    margin: 0 0 145px 0;
 }
 
 .past-games__main-title {
     font-size: 36px;
     margin: 0 0 46px;
+}
+
+.past-games__list {
+    margin: 0 0 46px 0;
+}
+
+.past-games__item {
+    position: relative;
 }
 
 .past-games__item:first-child {
@@ -278,9 +276,9 @@ li {
 
 .past-games__content {
     width: 508px;
-    padding: 0 0 17px 30px;
-    position: relative;
-    bottom: 145px;
+    padding: 0 0 30px 30px;
+    position: absolute;
+    bottom: 0;
 }
 
 .card-news__title {
@@ -293,7 +291,6 @@ li {
 }
 
 .pagination {
-    margin: -140px 0 0 0;
     text-align: center;
     font-size: 16px;
     position: relative;
@@ -305,6 +302,7 @@ li {
     font-weight: 400;
     position: absolute;
     left: 382px;
+    padding: 4px;
 }
 
 .pagination__item:last-child {
@@ -322,9 +320,10 @@ li {
     width: 30px;
     height: 32px;
     display: inline-block;
+    padding: 4px;
 }
 
-.pagination__link:hover {
+.pagination__item--active {
     background-color: #8F00FF;
     border-radius: 50%;
 }
@@ -374,7 +373,6 @@ li {
 hr {
     opacity: 0.1;
 }
-
 
 .footer {
     position: relative;
