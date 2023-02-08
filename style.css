@@ -506,7 +506,7 @@ li {
     width: 100%;
     position: absolute;
     height: 412px;
-    background: url(/img/gamesback.png) center center / cover no-repeat;
+    background: url(img/gamesback.png) center center / cover no-repeat;
     filter: grayscale(1);
 }
 
