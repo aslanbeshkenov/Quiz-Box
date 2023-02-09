@@ -1,0 +1,34 @@
+.footer {
+    height: 133px;
+    margin-top: auto;
+}
+
+.footer__container {
+    border-top: 1px solid #2e3032;
+}
+
+.footer__content {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-container__section {
+    background-color: #17191C;
+    color: #FFFFFF;
+}
+
+.footer__content--pos {
+    margin-top: 48px;
+}

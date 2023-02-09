@@ -1,0 +1,30 @@
+.wrapper-main {
+    background: #17191C;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.wrapper-main::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:
+        url(../../img/mainbackground.png) center center / cover no-repeat;
+    filter: grayscale(1);
+}
+
+.wrapper-main::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1018px;
+    position: absolute;
+    left: 0;
+    bottom: 135px;
+    background: url(../../img/mainbackground2.png) center center / cover no-repeat;
+    filter: grayscale(1);
+}

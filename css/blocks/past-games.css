@@ -1,0 +1,30 @@
+.past-games {
+    margin: 0 0 145px 0;
+}
+
+.past-games__main-title {
+    font-size: 36px;
+    margin: 0 0 46px;
+}
+
+.past-games__list {
+    margin: 0 0 52px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.past-games__item {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.past-games__item:first-child {
+    margin: 0 20px 0 0;
+}
+
+.past-games__content {
+    padding: 30px 48px 30px 30px;
+    position: absolute;
+    bottom: 0;
+}

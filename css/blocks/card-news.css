@@ -1,0 +1,12 @@
+.card-news__date {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card-news__title {
+    font-size: 24px;
+}
+
+.card-news__description {
+    font-size: 16px;
+}
