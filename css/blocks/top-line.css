@@ -31,3 +31,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.page__title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    color: #FFFFFF
+}
