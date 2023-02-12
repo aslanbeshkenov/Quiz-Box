@@ -55,4 +55,5 @@
 
 .about__link:hover {
     background: #741BBA;
+    transition: 1s;
 }

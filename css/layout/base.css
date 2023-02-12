@@ -57,3 +57,8 @@ ul {
 li {
     list-style-type: none;
 }
+
+.button {
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}

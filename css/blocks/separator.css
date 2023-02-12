@@ -1,0 +1,21 @@
+.separator {
+    min-height: 363px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(img/banner.png) right 22% bottom no-repeat;
+}
+
+.separator__content {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.separator__title {
+    font-weight: bold;
+    font-size: 48px;
+    width: 42%;
+    line-height: 1.42;
+}
