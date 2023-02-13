@@ -30,7 +30,7 @@
     justify-content: center;
 }
 
-.partners__link:hover {
+.partners__item:hover {
     filter: grayscale(0);
-    transition: 1s;
+    transition: 0.5s;
 }

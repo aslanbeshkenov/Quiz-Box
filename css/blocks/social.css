@@ -32,38 +32,90 @@
     transform: translate(-50%, -50%);
     width: 36px;
     height: 36px;
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.icon-telegram {
-    background: url(/img/icons/sprites.png) -122px -66px;
+.icon-telegram::before,
+.icon-vk::before,
+.icon-instagram::before,
+.icon-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.icon-telegram::before {
+    background: url('../../img/icons/sprites.png') -122px -66px;
+}
+
+.icon-telegram:hover::before {
+    opacity: 0;
+}
+
+.icon-telegram::after {
+    background: url('../../img/icons/sprites.png') -122px -10px;
 }
 
 .icon-telegram:hover::after {
-    background: url(/img/icons/sprites.png) -122px -10px;
+    background: url('../../img/icons/sprites.png') -122px -10px;
+    opacity: 1;
 }
 
-.icon-vk {
-    background: url(/img/icons/sprites.png) -10px -122px
+.icon-vk::before {
+    background: url('../../img/icons/sprites.png') -10px -122px;
+}
+
+.icon-vk:hover:before {
+    opacity: 0;
+}
+
+.icon-vk::after {
+    background: url('../../img/icons/sprites.png') -66px -122px;
 }
 
 .icon-vk:hover::after {
-    background: url('/img/icons/sprites.png') -66px -122px;
+    opacity: 1;
 }
 
-.icon-facebook {
-    background: url('/img/icons/sprites.png') -10px -10px;
+.icon-facebook::before {
+    background: url('../../img/icons/sprites.png') -10px -10px;
+}
+
+.icon-facebook:hover:before {
+    opacity: 0;
+}
+
+.icon-facebook::after {
+    background: url('../../img/icons/sprites.png') -66px -10px;
 }
 
 .icon-facebook:hover::after {
-    background: url('/img/icons/sprites.png') -66px -10px;
+    opacity: 1;
+    ;
 }
 
-.icon-instagram {
-    background: url('/img/icons/sprites.png') -10px -66px;
+.icon-instagram::before {
+    background: url('../../img/icons/sprites.png') -10px -66px;
+}
+
+.icon-instagram:hover::before {
+    opacity: 0;
+}
+
+.icon-instagram::after {
+    background: url('../../img/icons/sprites.png') -66px -66px;
 }
 
 .icon-instagram:hover::after {
-    background: url('/img/icons/sprites.png') -66px -66px;
+    opacity: 1;
 }
 
 .social__item:last-child {
