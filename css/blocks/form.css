@@ -4,7 +4,7 @@
 }
 
 .form__row--margin-bottom {
-    margin-bottom: 3px;
+    margin-bottom: 23px;
 }
 
 .form__input {
@@ -13,9 +13,14 @@
     height: 65px;
     border-radius: 5px;
     padding: 19px 30px;
-    border: none;
     font-size: 18px;
     color: #1A1B1E;
+    border: 1px solid transparent;
+}
+
+.form__input:focus {
+    outline: 0;
+    border-color: #8F00FF;
 }
 
 .form__input::placeholder {
@@ -26,23 +31,19 @@
     margin-right: 0;
 }
 
-.form__input:active {
-    border: 1px solid #8F00FF;
-}
-
 .form__input--textarea {
     min-height: 235px;
+    resize: none;
     padding-top: 29px;
-    margin-bottom: 20px;
 }
 
 .form__controls {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 29px;
 }
 
 .form__controls-title {
-    width: 38%;
+    width: 38.4%;
     font-size: 18px;
     padding-top: 10px;
 }
@@ -51,11 +52,7 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-}
-
-.controls__item {
-    margin-right: 17px;
-    margin-bottom: 9px;
+    gap: 7px 8px;
 }
 
 .controls__elem {

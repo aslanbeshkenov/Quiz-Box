@@ -20,10 +20,8 @@
     height: 36px;
 }
 
-.icon-telegram:after,
-.icon-vk::after,
-.icon-instagram::after,
-.icon-facebook::after {
+.social__icon::after,
+.social__icon::before {
     content: "";
     display: block;
     position: absolute;
@@ -32,89 +30,79 @@
     transform: translate(-50%, -50%);
     width: 36px;
     height: 36px;
+    transition: 0.3s;
+}
+
+.social__icon::after {
     opacity: 0;
-    transition: 0.3s;
 }
 
-.icon-telegram::before,
-.icon-vk::before,
-.icon-instagram::before,
-.icon-facebook::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
+.social__icon::before {
     opacity: 1;
-    transition: 0.3s;
 }
 
-.icon-telegram::before {
+.social__icon--telegram::before {
     background: url('../../img/icons/sprites.png') -122px -66px;
 }
 
-.icon-telegram:hover::before {
+.social__icon--telegram:hover::before {
     opacity: 0;
 }
 
-.icon-telegram::after {
+.social__icon--telegram::after {
     background: url('../../img/icons/sprites.png') -122px -10px;
 }
 
-.icon-telegram:hover::after {
+.social__icon--telegram:hover::after {
     background: url('../../img/icons/sprites.png') -122px -10px;
     opacity: 1;
 }
 
-.icon-vk::before {
+.social__icon--vk::before {
     background: url('../../img/icons/sprites.png') -10px -122px;
 }
 
-.icon-vk:hover:before {
+.social__icon--vk:hover:before {
     opacity: 0;
 }
 
-.icon-vk::after {
+.social__icon--vk::after {
     background: url('../../img/icons/sprites.png') -66px -122px;
 }
 
-.icon-vk:hover::after {
+.social__icon--vk:hover::after {
     opacity: 1;
 }
 
-.icon-facebook::before {
+.social__icon--facebook::before {
     background: url('../../img/icons/sprites.png') -10px -10px;
 }
 
-.icon-facebook:hover:before {
+.social__icon--facebook:hover:before {
     opacity: 0;
 }
 
-.icon-facebook::after {
+.social__icon--facebook::after {
     background: url('../../img/icons/sprites.png') -66px -10px;
 }
 
-.icon-facebook:hover::after {
+.social__icon--facebook:hover::after {
     opacity: 1;
-    ;
 }
 
-.icon-instagram::before {
+.social__icon--instagram::before {
     background: url('../../img/icons/sprites.png') -10px -66px;
 }
 
-.icon-instagram:hover::before {
+.social__icon--instagram:hover::before {
     opacity: 0;
 }
 
-.icon-instagram::after {
+.social__icon--instagram::after {
     background: url('../../img/icons/sprites.png') -66px -66px;
 }
 
-.icon-instagram:hover::after {
+.social__icon--instagram:hover::after {
     opacity: 1;
 }
 

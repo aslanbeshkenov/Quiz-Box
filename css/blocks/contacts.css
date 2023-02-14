@@ -25,20 +25,14 @@
     visibility: visible;
 }
 
-/* .contacts:hover .dropdown__workhours {
-    opacity: 1;
-} */
-
 .dropdown__workhours {
     position: absolute;
     border: 1px solid grey;
     width: 160px;
-    /* top: 109%;
-    display: none; */
     top: 100%;
     margin-top: 10px;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     right: 0px;
     visibility: hidden;
     background: #CDD1D2;
@@ -60,11 +54,12 @@
     position: absolute;
 }
 
-.triangle {
+.dropdown__workhours::after {
+    content: "";
     border: 11px solid transparent;
     border-bottom-color: #CDD1D2;
     position: absolute;
-    top: -36%;
+    top: -21px;
     right: 26%;
 }
 

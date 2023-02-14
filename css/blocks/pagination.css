@@ -27,15 +27,21 @@
 
 .pagination__link {
     font-weight: 700;
-    width: 30px;
+    width: 32px;
     height: 32px;
     display: block;
     padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.pagination__item--active {
+.pagination__link:hover {
     background-color: #8F00FF;
-    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+.pagination__item--active .pagination__link {
+    background-color: #8F00FF;
 }
 
 .pagination--color {

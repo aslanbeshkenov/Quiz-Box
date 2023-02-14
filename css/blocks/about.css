@@ -44,16 +44,15 @@
 }
 
 .about__link {
-    width: 168px;
-    height: 55px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     text-transform: uppercase;
     color: #FFFFFF;
     background: inherit;
+    transition: background 1s;
+    padding: 18px 40px;
 }
 
 .about__link:hover {
     background: #741BBA;
-    transition: 1s;
 }
